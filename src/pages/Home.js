@@ -12,7 +12,7 @@ export default function Home() {
     },[])
 
     const loadUsers= async()=>{
-        const result= await axios.get("https://crud-backend-jewa.onrender.com/users")
+        const result= await axios.get("http://localhost:9090/users")
         // console.log(result.data);
         setUsers(result.data);
     }
