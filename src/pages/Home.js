@@ -19,7 +19,7 @@ export default function Home() {
 
     const deleteUser=async (id)=>{
 
-        await axios.delete(`https://crud-backend-jewa.onrender.com/user/${id}`)
+        await axios.delete(`http://localhost:9090/user/${id}`)
         loadUsers()
 
     }
