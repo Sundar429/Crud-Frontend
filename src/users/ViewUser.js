@@ -18,7 +18,7 @@ export default function ViewUser() {
     },[])
 
     const loaduser= async ()=>{
-        const result=await axios.get(`http://localhost:9090/user/${id}`)
+        const result=await axios.get(`https://crud-backend-jewa.onrender.com/user/${id}`)
         setUser(result.data)
     }
     return (

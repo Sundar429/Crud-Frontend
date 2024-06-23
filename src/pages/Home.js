@@ -12,14 +12,14 @@ export default function Home() {
     },[])
 
     const loadUsers= async()=>{
-        const result= await axios.get("http://localhost:9090/users")
+        const result= await axios.get("https://crud-backend-jewa.onrender.com/users")
         // console.log(result.data);
         setUsers(result.data);
     }
 
     const deleteUser=async (id)=>{
 
-        await axios.delete(`http://localhost:9090/user/${id}`)
+        await axios.delete(`https://crud-backend-jewa.onrender.com/user/${id}`)
         loadUsers()
 
     }
