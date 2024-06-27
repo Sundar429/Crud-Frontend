@@ -24,7 +24,7 @@ export default function EditUser() {
     const handleSubmit= async (e)=>{
         e.preventDefault()
 
-        const post =await axios.put(`http://localhost:9090/user/${id}`,user)
+        const post =await axios.put(`https://crud-backend-jewa.onrender.com/user/${id}`,user)
         navigate("/")
 
     }
@@ -34,7 +34,7 @@ export default function EditUser() {
     },[])
 
     const loadUser= async()=>{
-        const result=await axios.get(`http://localhost:9090/user/${id}`)
+        const result=await axios.get(`https://crud-backend-jewa.onrender.com/user/${id}`)
         setUser(result.data)
     }
     return (
