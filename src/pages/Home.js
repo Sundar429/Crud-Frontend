@@ -30,9 +30,9 @@ export default function Home() {
                     <thead>
                         <tr>
                             <th scope="col">S.No</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Username</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">Student Name</th>
+                            <th scope="col">Student Username</th>
+                            <th scope="col">Student Email</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
