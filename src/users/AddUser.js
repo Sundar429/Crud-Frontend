@@ -22,7 +22,7 @@ export default function AddUser() {
     const handleSubmit= async (e)=>{
         e.preventDefault()
 
-        const post =await axios.post("https://crud-backend-jewa.onrender.com/user",user)
+        const post =await axios.post("https://crud-project-latest.onrender.com/user",user)
         navigate("/")
 
     }
